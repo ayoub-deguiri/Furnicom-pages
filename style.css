@@ -16,6 +16,56 @@ body {
   text-align: left;
   color: #5e606c;
 }
+.allcontent {
+  display: none; /* Hide content initially */
+}
+.hexagon-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hexagon {
+  height: 40px;
+  overflow: visible;
+}
+
+.hexagon-base,
+.hexagon-line-animation {
+  fill: white;
+  stroke-miterlimit: 10;
+  stroke-width: 10px;
+}
+
+.hexagon-base {
+  stroke: #5e606c;
+}
+
+.hexagon-line-animation {
+  stroke: white;
+  stroke-linecap: round;
+  animation: dash 2s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 260.22 173.48;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 1 431.7;
+  }
+
+  100% {
+    stroke-dasharray: 260.22 173.48;
+    stroke-dashoffset: -867.4;
+  }
+}
+
+
 .mobile-nav {
   display: none;
 }
@@ -347,7 +397,7 @@ nav {
   background-color: #d3d3d4;
   background-repeat: no-repeat;
   background-position: center;
- 
+
   border-radius: 0px 0px 0px 0px;
   padding: 20px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.18);
@@ -365,7 +415,7 @@ nav {
 
 .card6 .flip-card-front {
   background-image: url("./assets/box6-4.jpg");
-  background-color: #dcd7d1;;
+  background-color: #dcd7d1;
   background-position: unset;
   background-repeat: no-repeat;
   background-position: center;
@@ -442,7 +492,8 @@ nav {
 }
 
 .flip-card-back .btn-more {
-  margin-top: 12px;
+  position: absolute;
+  bottom: 40px;
 }
 
 .flip-card-back .btn-more button {
@@ -462,9 +513,11 @@ nav {
   background-color: black;
 }
 
-.cards  .row{
-  --bs-gutter-x: -5rem;
-  --bs-gutter-y: 1rem;
+.cards .row {
+  
+    --bs-gutter-x: -9rem;
+    --bs-gutter-y: 2rem;
+  
 }
 /* statics*/
 .statics {
@@ -617,7 +670,7 @@ nav {
 .news img {
   width: 100%;
 }
-.news p{
+.news p {
   color: #5e606c;
   font-family: "Roboto", Sans-serif;
   font-size: 16px;
@@ -668,36 +721,29 @@ nav {
 }
 
 .modle-gal {
-  
-   display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
-  
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modle-gal .modle-content {
   position: fixed;
   top: 50%;
   left: 50%;
-  
-  transform: translate(-50%,-50%);
-  
-  
+
+  transform: translate(-50%, -50%);
 }
-.modle-gal  .btns {
+.modle-gal .btns {
   display: flex;
   justify-content: space-between;
- 
+
   margin-top: 20px;
-  
-  
- 
 }
 .btns .previous {
   cursor: pointer;
@@ -766,22 +812,18 @@ footer nav {
   bottom: 70px;
   right: 15px;
   z-index: 99;
- 
+
   border: none;
   outline: none;
   background-color: #5e606c;
   color: white;
   cursor: pointer;
-  
-
 
   text-decoration: none;
 
-
-  
   overflow: hidden;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   z-index: 999;
   text-align: center;
   border-radius: 50%;
@@ -846,19 +888,18 @@ footer nav {
     display: block;
     margin: 0 !important;
   }
-  .navbar-toggler{
+  .navbar-toggler {
     border: none !important;
     outline: none !important;
-    
   }
-  .navbar-toggler:hover{
+  .navbar-toggler:hover {
     color: #5e606c !important;
   }
-  .navbar-toggler:focus{
+  .navbar-toggler:focus {
     border: none !important;
     outline: none !important;
   }
-  .navbar-toggler:active{
+  .navbar-toggler:active {
     border: none !important;
     outline: none !important;
   }
@@ -868,7 +909,7 @@ footer nav {
     color: white;
     border: none;
   }
-  .offcanvas{
+  .offcanvas {
     width: 70% !important;
   }
   .nav-item {
@@ -956,51 +997,50 @@ footer nav {
     font-weight: 400;
   }
   .about-us {
-    padding: 0rem 1rem !important;
+    padding: 1rem 1rem !important;
   }
   .about-us .row {
     flex-direction: column;
   }
   .second-col .widget {
- 
     width: 100%;
     display: block;
     text-align: center;
   }
   .icon-box {
-    
     width: auto !important;
     margin-bottom: 2rem;
-   
   }
-.content-box{
-  width: 80%;
-  margin: auto;
-}
-.second-col {
-  padding-top: 1rem;
- 
-  background-position: center;
+  .content-box {
+    width: 80%;
+    margin: auto;
+  }
+  .second-col {
+    padding-top: 1rem;
 
+    background-position: center;
 
-  background-size: contain;
-}
-.Works h1 {
- 
-  font-size: 29px;
-}
+    background-size: contain;
+  }
+  .Works h1 {
+    font-size: 29px;
+  }
   .cards h1 {
     font-size: 30px;
   }
   .cards .row {
     --bs-gutter-x: 0rem !important;
-  
   }
   .cards .container {
     max-width: 100% !important;
-   
   }
-  
+  .flip-card-back {
+    padding: 50px 40px 0px 40px;
+  }
+  .flip-card-back .btn-more {
+
+    bottom: 20px;
+  }
   .statics .row {
     flex-direction: column;
   }
@@ -1025,10 +1065,8 @@ footer nav {
   }
 
   footer nav a {
-    font-size: 19px;
+    font-size: 18px;
   }
-
- 
 
   footer nav {
     margin: 0 !important;
@@ -1036,7 +1074,7 @@ footer nav {
   .infos p {
     font-size: 11px !important;
   }
- /* .galery .col-lg-2 {
+  /* .galery .col-lg-2 {
     width: 100% !important;
     height: 100% !important;
     position: relative;
@@ -1054,12 +1092,8 @@ footer nav {
   }
 
   .modle-gal .modle-content img {
-   
     width: 300px;
     height: 300px;
-    
-
-    
   }
 }
 @media (max-width: 768px) {
@@ -1115,8 +1149,7 @@ footer nav {
   .cards .row .col {
     --bs-gutter-x: 1rem !important;
   }
-  
-  
+
   .cards .container,
   .container-md,
   .container-sm {
@@ -1164,16 +1197,14 @@ footer nav {
     width: 100%;
   }
 
-  .galery .col-md-4{
+  .galery .col-md-4 {
     position: relative;
     width: 100%;
-  } 
+  }
   .galery img {
     width: 100%;
     height: 250px;
   }
-
- 
 
   .galery .lyout-content {
     top: 50%;
@@ -1210,9 +1241,8 @@ footer nav {
     position: relative;
     margin: auto;
   }
-  
 }
-@media(max-width : 994px){
+@media (max-width: 994px) {
   .cards .row,
   .cards .row .col {
     width: 100% !important;
@@ -1222,7 +1252,7 @@ footer nav {
     --bs-gutter-x: 1rem !important;
   }
   .cards .row {
-  /*  --bs-gutter-x: 1rem !important; */
+     --bs-gutter-x: 0rem !important;
     --bs-gutter-y: 2rem !important;
   }
   .cards .container,
@@ -1235,10 +1265,10 @@ footer nav {
   .flip-card {
     width: 100%;
     height: 370px;
-   
   }
 }
 /*
 @media (min-width: 1441px) and (max-width: 2561px) {
 
 } */
+

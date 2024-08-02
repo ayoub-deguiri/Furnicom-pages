@@ -1,36 +1,11 @@
-// Counter
-/*
-$(document).ready(function () {
-  $(window).on("scroll", function () {
-    var targetSection = $(".statics");
-    var sectionPosition = targetSection.offset().top;
-    var viewportHeight = $(window).height();
-    var scrollPosition = $(window).scrollTop();
 
-    if (scrollPosition - 600 >= sectionPosition - viewportHeight) {
-      const counters = $(".number p");
-
-      counters.each(function () {
-        const counter = $(this);
-        const updateCount = function () {
-          const target = +counter.attr("data-target");
-          const count = +counter.text();
-          const increment = target / 700; // Adjust this value to control speed
-
-          if (count < target) {
-            counter.text(Math.ceil(count + increment));
-            setTimeout(updateCount, 1);
-          } else {
-            counter.text(target);
-          }
-        };
-
-        updateCount();
-      });
-    }
-  });
-}); */
 $(document).ready(function(){
+  setTimeout(function() {
+    $('.hexagon-loader').fadeOut('slow', function() {
+      $('.allcontent').fadeIn('slow');
+    });
+  }, 1000); // Delay 
+
   const counters = $(".number p");
   counters.each(function () {
     const counter = $(this);
@@ -51,6 +26,9 @@ $(document).ready(function(){
   });
 
 
+
+
+  
   //scrool to top
   const scrollToTopBtn = $("#scrollToTopBtn");
 
@@ -65,11 +43,6 @@ $(document).ready(function(){
   scrollToTopBtn.click(function () {
     $("html, body").animate({ scrollTop: 0 }, "easy");
   });
-
-
-
-
-
 
 // Search icon
 $("#search-iconn").click(function () {
@@ -102,11 +75,6 @@ const slides = [
     title: "Authentic and Luxurious",
     subtitle: "Your Home Deserves Special and Selected Furnishings",
     image: "./assets/slide/slide-3-1.jpg",
-  },
-  {
-    title: "Modern Living Room Sets",
-    subtitle: "Created by Award-Winning Designers, Suitable for All Interiors",
-    image: "./assets/slide/slide-2.jpg",
   },
 ];
 
@@ -163,4 +131,6 @@ $(".gal").click(function() {
 
 });
 
-})
+
+});
+

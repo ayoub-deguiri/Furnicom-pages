@@ -10,23 +10,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
   <!--font awsome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--css file -->
   <link rel="stylesheet" href="style.css" />
-
-
   <title>Fornicom</title>
 </head>
 
 <body>
+  <!--preloader-->
+  <div class="hexagon-loader">
+    <svg class="hexagon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.78 150.37">
+    <path class="hexagon-base" d="M64.9519052838329 0L129.9038105676658 37.5L129.9038105676658 112.5L64.9519052838329 150L0 112.5L0 37.5Z"/>
+    <path class="hexagon-line-animation" d="M64.9519052838329 0L129.9038105676658 37.5L129.9038105676658 112.5L64.9519052838329 150L0 112.5L0 37.5Z"/>
+    </svg>
+  </div>
+  <div class="allcontent" >
   <!-- nav bar version mobile -->
   <nav class="navbar navbar-dark bg-dark sticky-top mobile-nav">
     <div class="container-fluid">
-
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,7 +38,6 @@
       <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
@@ -107,17 +110,13 @@
         </div>
       </div>
     </div>
-
-
     <nav class="navbar navbar-expand-lg navbar-custom ">
       <div class="container-fluid">
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -128,49 +127,6 @@
                 Pages
               </a>
               <div class="dropdown-menu">
-
-             
-              <div class="custom-drop">
-                <div class="drop-1">
-                  <span>General</span>
-                  <ul>
-                    <li><a href="#"> <i class="fa-solid fa-chevron-right"></i>About </a></li>
-                    <li><a href="#"> <i class="fa-solid fa-chevron-right"></i>Contacts </a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Careers</a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Pricing</a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Clients</a> </li>
-
-                  </ul>
-                </div>
-                <div class="drop-1">
-                  <span>AUXLIARY</span>
-                  <ul>
-                    <li><a href="#"> <i class="fa-solid fa-chevron-right"></i>Typography</a></li>
-                    <li><a href="#"> <i class="fa-solid fa-chevron-right"></i>Maintenance</a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>404</a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Pricing</a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>FAQs</a> </li>
-                  </ul>
-                </div>
-                <div class="drop-1">
-                  <span>dynamique pages</span>
-                  <ul>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>about </a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Contacts </a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Careers</a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Pricing</a> </li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Clients</a> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Features
-              </a>
-              <div class="dropdown-menu dropdown-2">
                 <div class="custom-drop">
                   <div class="drop-1">
                     <span>General</span>
@@ -180,7 +136,7 @@
                       <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Careers</a> </li>
                       <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Pricing</a> </li>
                       <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Clients</a> </li>
-  
+
                     </ul>
                   </div>
                   <div class="drop-1">
@@ -204,7 +160,47 @@
                     </ul>
                   </div>
                 </div>
-             
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Features
+              </a>
+              <div class="dropdown-menu dropdown-2">
+                <div class="custom-drop">
+                  <div class="drop-1">
+                    <span>General</span>
+                    <ul>
+                      <li><a href="#"> <i class="fa-solid fa-chevron-right"></i>About </a></li>
+                      <li><a href="#"> <i class="fa-solid fa-chevron-right"></i>Contacts </a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Careers</a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Pricing</a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Clients</a> </li>
+
+                    </ul>
+                  </div>
+                  <div class="drop-1">
+                    <span>AUXLIARY</span>
+                    <ul>
+                      <li><a href="#"> <i class="fa-solid fa-chevron-right"></i>Typography</a></li>
+                      <li><a href="#"> <i class="fa-solid fa-chevron-right"></i>Maintenance</a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>404</a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Pricing</a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>FAQs</a> </li>
+                    </ul>
+                  </div>
+                  <div class="drop-1">
+                    <span>dynamique pages</span>
+                    <ul>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>about </a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Contacts </a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Careers</a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Pricing</a> </li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Clients</a> </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -222,10 +218,8 @@
               </ul>
             </li>
             <div class="search">
-
               <button class="btn btn-search" class="search-icon"><i class="fa-solid fa-magnifying-glass"
                   id="search-icon"></i></button>
-              
             </div>
         </div>
     </nav>
@@ -265,15 +259,11 @@
 
       </ul>
     </nav>
-
-
-
     <div class="search-container" id="search-container">
       <button class="btn" id="close-search"><i class="fa-solid fa-times"></i></button>
       <input type="text" placeholder="Search" aria-label="Search" id="search-input">
     </div>
   </header>
-
   <div class="container-slide">
     <div class="content">
       <h1 id="title">Amazing Exclusive Design</h1>
@@ -288,7 +278,6 @@
       <div class="slide-btn">03</div>
     </div>
   </div>
-
   <div class="container-fluid about-us">
     <div class="row">
       <div class="col-lg-4  first-col col-md-12">
@@ -299,7 +288,6 @@
           molestiae voluptatem ipsam tempore dolorum, odio sequi non, suscipit
           pariatur, illo ipsum!
         </p>
-
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
           nostrum recusandae eius repudiandae ea nemo praesentium animi. Vitae
@@ -349,16 +337,14 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
-
   <!--  offres-->
   <div class="cards">
     <h1>what we offer</h1>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4  col-sm-12 col-xs-12 " >
+        <div class="col-lg-4  col-sm-12 col-xs-12 ">
           <div class="flip-card card1">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -390,7 +376,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-lg-4 col-sm-6 col-xs-12 ">
           <div class="flip-card card2">
             <div class="flip-card-inner">
@@ -422,7 +407,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-lg-4 col-sm-6 col-xs-12">
           <div class="flip-card card3">
             <div class="flip-card-inner">
@@ -454,7 +438,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-lg-4 col-sm-12 col-xs-12">
           <div class="flip-card card4">
             <div class="flip-card-inner">
@@ -477,8 +460,6 @@
                 <div class="description">
                   Stylish and elegant, chic and fancy glass lamps, chandeliers and wall sconce will add the note of
                   luxury and style to your interior. Our best selections of enlightenment will please every person!
-
-
                 </div>
                 <div class="btn-more">
                   <button>more</button>
@@ -509,8 +490,6 @@
                 <div class="description">
                   Enjoy our hand-made pillows and a wide selection of textile elements specially designed for your home.
                   Our designers create both the most intricate and plain textile items that can decorate any room.
-
-
                 </div>
                 <div class="btn-more">
                   <button>more</button>
@@ -519,7 +498,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-lg-4 col-sm-6  col-xs-12">
           <div class="flip-card card6">
             <div class="flip-card-inner">
@@ -542,8 +520,6 @@
                 <div class="description">
                   Our decor items and accessories add an artfully abstract touch to side tables and shelves alike. Our
                   designers create the objects that can perfectly complete any of your interiors.
-
-
                 </div>
                 <div class="btn-more">
                   <button>more</button>
@@ -600,14 +576,12 @@
   <div class="Testimonials">
     <p>Testimonials</p>
   </div>
-
   <div class="news">
     <h1>news</h1>
     <div class="container-fuild">
       <div class="row">
         <div class="col-lg-6 col-sm-6">
           <img src="./assets/post1-570x270.jpg" alt="" />
-
           <h5>
             Top Furniture Trends in the Millennium New Directions for
             Furniture in the 21st Century
@@ -618,7 +592,6 @@
             are fickle. Trends are the undercurrents that drive the results.
           </p>
         </div>
-
         <div class="col-lg-6 col-sm-6">
           <img src="./assets/post2-570x270.jpg" alt="" />
           <h5>
@@ -634,11 +607,10 @@
       </div>
     </div>
   </div>
-
   <div class="galery">
     <div class="container-fuild">
       <div class="row g-0">
-        <div class="col-lg-2   col-sm-4 col-12 gal" data-id="1" >
+        <div class="col-lg-2   col-sm-4 col-12 gal" data-id="1">
           <img src="./assets/galery1.jpg" alt="" />
           <div class="lyout-content">
             <i class="fa-solid fa-image"></i>
@@ -670,7 +642,7 @@
             </div>
           </div>
         </div>
-     
+
         <div class="col-lg-2   col-sm-4 gal" data-id="1">
           <img src="./assets/galery4.jpg" alt="" />
           <div class="lyout-content">
@@ -704,8 +676,6 @@
       </div>
     </div>
   </div>
-
-
   <footer>
     <nav>
       <ul>
@@ -734,40 +704,39 @@
     </div>
   </footer>
   <button id="scrollToTopBtn" title="Go to top">
-    <svg width="20px" height="24px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" stroke-width="1.9200000000000004"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 14.5303C5.17678 14.2374 5.17678 13.7626 5.46967 13.4697L11.4697 7.46967C11.7626 7.17678 12.2374 7.17678 12.5303 7.46967L18.5303 13.4697C18.8232 13.7626 18.8232 14.2374 18.5303 14.5303C18.2374 14.8232 17.7626 14.8232 17.4697 14.5303L12 9.06066L6.53033 14.5303C6.23744 14.8232 5.76256 14.8232 5.46967 14.5303Z" fill="#ffffff"></path> </g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 14.5303C5.17678 14.2374 5.17678 13.7626 5.46967 13.4697L11.4697 7.46967C11.7626 7.17678 12.2374 7.17678 12.5303 7.46967L18.5303 13.4697C18.8232 13.7626 18.8232 14.2374 18.5303 14.5303C18.2374 14.8232 17.7626 14.8232 17.4697 14.5303L12 9.06066L6.53033 14.5303C6.23744 14.8232 5.76256 14.8232 5.46967 14.5303Z" fill="#ffffff"></path> </g></svg>
-
-
-  <div class="modle-gal">
-    <div class="modle-content">
-      <div class="modle-img">
-       <img src="" alt="">
-      </div>
-      <div class="btns">
-        <div class="previous">
-          <i class="fa-solid fa-arrow-left"></i>
+    <svg width="20px" height="24px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff"
+        stroke-width="1.9200000000000004">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M5.46967 14.5303C5.17678 14.2374 5.17678 13.7626 5.46967 13.4697L11.4697 7.46967C11.7626 7.17678 12.2374 7.17678 12.5303 7.46967L18.5303 13.4697C18.8232 13.7626 18.8232 14.2374 18.5303 14.5303C18.2374 14.8232 17.7626 14.8232 17.4697 14.5303L12 9.06066L6.53033 14.5303C6.23744 14.8232 5.76256 14.8232 5.46967 14.5303Z"
+          fill="#ffffff"></path>
+      </g>
+      <g id="SVGRepo_iconCarrier">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M5.46967 14.5303C5.17678 14.2374 5.17678 13.7626 5.46967 13.4697L11.4697 7.46967C11.7626 7.17678 12.2374 7.17678 12.5303 7.46967L18.5303 13.4697C18.8232 13.7626 18.8232 14.2374 18.5303 14.5303C18.2374 14.8232 17.7626 14.8232 17.4697 14.5303L12 9.06066L6.53033 14.5303C6.23744 14.8232 5.76256 14.8232 5.46967 14.5303Z"
+          fill="#ffffff"></path>
+      </g>
+    </svg>
+    </button>
+    <div class="modle-gal">
+      <div class="modle-content">
+        <div class="modle-img">
+          <img src="" alt="">
         </div>
-        <div class="next">
-          <i class="fa-solid fa-arrow-right"></i>
+        <div class="btns">
+          <div class="previous">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-  <script src="./index.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
